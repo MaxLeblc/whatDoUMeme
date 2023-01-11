@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6rem;
+  min-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(190deg, rgba(0, 0, 0, 1) 0%, rgba(127, 94, 233, 1) 53%, rgba(69, 252, 212, 1) 100%);
+
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  &>h1,
+  h2 {
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+  }
+
+  &>h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    color: #45fcd4;
+  }
+
+  &>h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #a38af5;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 700px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {}

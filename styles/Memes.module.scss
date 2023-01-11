@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gradiantInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20rem;
+    min-height: 2rem;
+    background: linear-gradient(107deg, rgba(127, 94, 233, 1) 33%, rgba(69, 252, 212, 1) 100%);
+    border-radius: 2rem;
+    padding: .5rem;
+    margin-bottom: 4rem;
+
+    &>input {
+        width: 100%;
+        height: 2.5rem;
+        background: #18122b;
+        color: #fff;
+        border: none;
+        border-radius: 2rem;
+        font-weight: bold;
+        outline: none;
+        padding-left: 1rem;
+
+        &:focus {
+            scale: 0.98;
+        }
+    }
+
+}
+
+.memes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    background: #000;
+    border-radius: 1rem;
+    margin: 2rem;
+    transition: all ease 200ms;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+
+    &>img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    background: #000;
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+    font-weight: 600;
+
+    &>p {
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    &>button {
+        width: 6rem;
+        height: 2rem;
+        background: linear-gradient(156deg, rgba(148, 0, 249, 1) 0%, rgba(69, 252, 212, 1) 100%);
+        color: rgb(23, 21, 77);
+        border-radius: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:active {
+            scale: .95;
+            background: linear-gradient(156deg, rgb(91, 0, 151) 0%, rgb(1, 135, 106) 100%);
+        }
+    }
+}
+
+.button {}
+
+.wrapper {
+    width: 100VW;
+    height: 100VH;
+    position: fixed;
+}

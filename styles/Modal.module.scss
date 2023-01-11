@@ -1,0 +1,77 @@
+.modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-radius: 1rem;
+    border: rgba(148, 0, 249, 1) solid;
+
+    &>form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 2rem 0;
+        gap: 1rem;
+
+        &>input {
+            width: 20rem;
+            height: 2rem;
+            border-radius: .2rem;
+            color: #000;
+            font-weight: bold;
+            outline: none;
+            padding-left: 1rem;
+        }
+
+    }
+}
+
+.button,
+.download {
+    width: 6rem;
+    height: 2rem;
+    background: linear-gradient(156deg, rgba(148, 0, 249, 1) 0%, rgba(69, 252, 212, 1) 100%);
+    color: rgb(23, 21, 77);
+    border-radius: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:active {
+        scale: .95;
+        background: linear-gradient(156deg, rgb(91, 0, 151) 0%, rgb(1, 135, 106) 100%);
+    }
+}
+
+.download {
+    margin: 2rem 0;
+}
+
+.close {
+    width: 4rem;
+    border-radius: .2rem;
+    color: #000;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    &:active {
+        scale: .95;
+        background: rgb(154, 154, 154);
+    }
+}
+
+.strong {}
