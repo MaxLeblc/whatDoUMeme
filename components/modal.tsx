@@ -17,7 +17,6 @@ export default function Modal({ id, name, blank, lines, handleCloseModal }: Moda
     const [text, setText] = useState<Input>({})
     const [isLoading, setIsLoading] = useState(false)
     const [newImage, setNewImage] = useState('')
-    console.log("🚀 ~ file: modal.tsx:19 ~ Modal ~ newImage", newImage)
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const currentInput = e.target.attributes.getNamedItem('data-index')?.value

@@ -1,14 +1,17 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.gradiantInput {
+@mixin flexMid{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    @include flexMid;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.gradiantInput {
+    @include flexMid;
     min-width: 20rem;
     min-height: 2rem;
     background: linear-gradient(107deg, rgba(127, 94, 233, 1) 33%, rgba(69, 252, 212, 1) 100%);
@@ -35,17 +38,14 @@
 }
 
 .memes {
-    display: flex;
+    @include flexMid;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .cards {
-    display: flex;
+    @include flexMid;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     width: 350px;
     background: #000;
     border-radius: 1rem;
@@ -61,15 +61,13 @@
     }
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(.95);
     }
 }
 
 .description {
-    display: flex;
+    @include flexMid;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     padding: 1.5rem;
     background: #000;
@@ -97,8 +95,6 @@
         }
     }
 }
-
-.button {}
 
 .wrapper {
     width: 100VW;

@@ -1,0 +1,29 @@
+.toTop {
+    position: fixed;
+    scale: 2;
+    left: 95%;
+    bottom: 5%;
+    border-radius: 5rem;
+    z-index: 50;
+    cursor: pointer;
+
+    &:hover {
+        scale: 2.5;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .toTop {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 15%;
+    }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .toTop {
+        left: 85%;
+    }
+}

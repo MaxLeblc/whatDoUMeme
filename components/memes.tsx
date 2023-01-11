@@ -54,7 +54,7 @@ export default function Memes() {
                         return value
                     }
                 }).map((meme) => (
-                    <div key={meme.id} className={styles.cards}>
+                    <div key={meme.id} className={styles.cards} onClick={() => handleOpenModal({ id: meme.id, name: meme.name, blank: meme.blank, lines: meme.lines })}>
                         <img src={meme.blank} alt={meme.name} />
                         <div className={styles.description} >
                             <p>{meme.name}</p>
