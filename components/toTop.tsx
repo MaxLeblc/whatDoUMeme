@@ -22,7 +22,7 @@ export default function ToTop() {
 
     return (
             <>
-            <Image src='/icons/toTop.png' alt='icon' width={16} height={16} className={styles.toTop}  style={{display: visible ? 'inline' : 'none'}} onClick={scrollToTop}/>
+            <Image src='/icons/toTop.svg' alt='icon' width={16} height={16} className={styles.toTop}  style={{display: visible ? 'inline' : 'none'}} onClick={scrollToTop}/>
             </>
     )
 }
